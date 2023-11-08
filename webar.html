@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebAR Sample</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='sourceType: webcam;'>
+        
+        <!-- マーカーの定義 -->
+        <a-marker preset="hiro">
+            <!-- 3Dモデルを表示する -->
+            <a-box position='0 0.5 0' material='color: green;'></a-box>
+        </a-marker>
+        
+        <!-- カメラの設定 -->
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
